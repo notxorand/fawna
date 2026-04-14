@@ -1,0 +1,26 @@
+# build outputs
+.zig-cache
+zig-out
+target
+Cargo.lock
+node_modules
+dist
+
+# misc
+.DS_Store
+*.pem
+.zed
+
+# debug
+*.log
+*.tmp
+*.dat
+*.idx
+zig-watch*
+
+# local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
