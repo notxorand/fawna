@@ -14,7 +14,7 @@ permissions:
 jobs:
   codspeed:
     name: CodSpeed (millions)
-    runs-on: blacksmith-8vcpu-ubuntu-2204
+    runs-on: ubuntu-latest-8-cores
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -43,7 +43,7 @@ jobs:
         contains(join(github.event.commits.*.modified, ' '), 'src/tsm/') ||
         contains(join(github.event.commits.*.removed, ' '), 'src/tsm/')
       ))
-    runs-on: blacksmith-8vcpu-ubuntu-2204
+    runs-on: ubuntu-latest-8-cores
     steps:
       - name: Checkout
         uses: actions/checkout@v5
